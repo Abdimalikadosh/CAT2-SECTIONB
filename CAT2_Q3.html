@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        select, button {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #7a3cff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select a Course and Topic</h2>
+    <form>
+        <label for="course">Choose a Course:</label>
+        <select id="course" name="course">
+            <option value="dsa">Data Structures & Algorithms</option>
+            <option value="web">Web Technology</option>
+            <option value="aptitude">Aptitude & Logical Reasoning</option>
+            <option value="programming">Programming Languages</option>
+        </select>
+
+        <label for="topic">Choose a Topic for Data Structures & Algorithm</label>
+        <select id="topic" name="topic">
+            <optgroup label="Data Structures & Algorithms">
+                <option value="arrays">Arrays</option>
+                <option value="linked-list">Linked List</option>
+                <option value="stacks">Stacks</option>
+                <option value="queues">Queues</option>
+                <option value="trees">Trees</option>
+                <option value="graphs">Graphs</option>
+            </optgroup>
+        </select>
+</body>
+</html>
+
